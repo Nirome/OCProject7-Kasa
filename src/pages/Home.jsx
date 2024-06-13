@@ -1,11 +1,14 @@
 import React from 'react';
-import Nav from '../components/Nav';
+import Header from "../components/Header"
+import Banner from "../components/Banner"
+import Gallery from '../components/Gallery';
 
 const Home = () => {
     return (
-        <div>
-            <Nav/>
-            <h1>Accueil</h1>
+        <div className='home'>
+            <Header />
+            <Banner />
+            <Gallery />           
         </div>
     );
 };
