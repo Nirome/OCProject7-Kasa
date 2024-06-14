@@ -1,0 +1,23 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 56px 50px 43px 50px;
+  .card {
+    position: relative;
+    img {
+      height: 340px;
+      width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      position: absolute;
+      bottom: 20px;
+      color: #fff;
+      left: 20px;
+      padding-right: 115px;;
+    }
+  }
+}

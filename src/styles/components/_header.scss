@@ -1,14 +1,18 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 45px 80px 50px 80px;
+    margin-top: 45px;
+    margin-bottom: 7px;
     ul {
         display: flex;
         gap: 57px;
         a {
-            color: inherit;
-            text-decoration: none;
-            list-style-type: none;    
+            color: inherit;         
+            list-style-type: none;
+            text-decoration: none;    
+            &.active-link {
+                text-decoration: underline;
+            }
         }
     }
 }

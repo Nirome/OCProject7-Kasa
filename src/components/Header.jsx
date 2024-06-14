@@ -1,25 +1,25 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from '/src/assets/images/logo.png';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import logo from "/src/assets/images/logo.png";
 
-const Nav = () => {
-    return (
-        <div className='header'>
-            <div className="logo">
-                <img src={logo} alt="logo" />
-            </div>  
-            <div>
-                <ul>
-                    <NavLink to="/">
-                        <li>Accueil</li>
-                    </NavLink>
-                    <NavLink to="#">
-                        <li>A Propos</li>
-                    </NavLink>
-                </ul>
-            </div>
-        </div>
-    );
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo">
+        <img src={logo} alt="logo" />
+      </div>
+      <div>
+        <ul>
+          <NavLink  to="/" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+            <li>Accueil</li>
+          </NavLink>
+          <NavLink  to="/about" className={({ isActive }) => (isActive ? 'active-link' : '')}>
+            <li>A Propos</li>
+          </NavLink>
+        </ul>
+      </div>
+    </div>
+  );
 };
 
-export default Nav;
+export default Header;
