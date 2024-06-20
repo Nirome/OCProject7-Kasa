@@ -1,3 +1,8 @@
-.footer img {
-    width: 100%;
+.footer {
+    height: 209px;
+    background: url(.././assets/images/footer.png) center/cover no-repeat;
+    @media (max-width: 768px) {
+        height: 209px;
+        background: url(.././assets/images/Size=Mobile.png) center/cover no-repeat;
+    }
 }

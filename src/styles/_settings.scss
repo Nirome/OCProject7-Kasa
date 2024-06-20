@@ -2,13 +2,32 @@
     
 body {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 18px;  
+    margin: 0px;
 }
 a {
     font-size: 24px;
     font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
 }
 img {
     object-fit: cover;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+h4 {
+    font-weight: 500;
+}
+p {
+    font-size: 14px;
+    font-weight: 700;
 }

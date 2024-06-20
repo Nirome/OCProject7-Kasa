@@ -7,8 +7,8 @@ import Footer from "../components/Footer";
 const Home = () => {
   return (
     <div>
+        <Header />
         <div className="home">
-            <Header />
             <Banner />
             <Gallery />
         </div>

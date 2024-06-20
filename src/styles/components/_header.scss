@@ -1,11 +1,22 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 45px;
-    margin-bottom: 7px;
+    margin: 45px 80px 50px 80px;
+    @media (max-width: 768px) {
+        margin: 20px 20px 27px 20px;
+    }
+    img {
+        @media (max-width: 768px) {
+            width: 145px;
+        };
+    }
     ul {
         display: flex;
         gap: 57px;
+        @media (max-width: 768px) {
+            gap: 26px;
+            padding-left: 0px;
+        }
         a {
             color: inherit;         
             list-style-type: none;

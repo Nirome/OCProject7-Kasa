@@ -1,5 +1,5 @@
 .background {
-  background: url(.././assets/images/img-banner.png) lightgray 50% center/cover;
+  background: url(.././assets/images/img-banner.png) lightgray 50% center/cover no-repeat;
   background-blend-mode: overlay;
   height: 223px;
   border-radius: 25px;
@@ -8,12 +8,22 @@
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.6);
+  @media (max-width: 768px) {
+    height: 111px;
+    border-radius: 10px;
+  }
   .banner-title {
     text-align: center;
     color: #fff;
     h1 {
         font-size: 48px;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media (max-width: 768px) {
+            font-size: 24px;
+            text-align: left;
+            padding-left: 16px;
+            padding-right: 94px;        
+        }
     } 
   }
 }

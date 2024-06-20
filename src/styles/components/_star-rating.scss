@@ -1,0 +1,11 @@
+.star-rating {
+    display: flex;
+    gap: 15px;
+    .star {
+        font-size: 1.4rem; 
+        color: #E3E3E3; 
+        &.selected {
+            color: $primary-color; 
+        }
+    }
+}

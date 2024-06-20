@@ -5,4 +5,9 @@
     margin-right: 80px;
     gap: 43px;
     margin-bottom: 50px;
+    @media (max-width: 768px) {
+        margin: 20px 20px 27px 20px;
+        gap: 22px;
+    }
 }
+
