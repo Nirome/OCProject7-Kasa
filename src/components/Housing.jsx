@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Button from "./Button";
+import Header from "./Header";
+import Footer from "./Footer";
+import Button from "./Collapse";
 import StarRating from "./StarRating";
+import Slideshow from "./Slideshow";
 
-const HousingForm = () => {
+const Housing = () => {
   const { id } = useParams();
   const [housing, setHousing] = useState(null);
 
@@ -35,11 +36,7 @@ const HousingForm = () => {
     <div>
       <Header />
       <div className="housing-details">
-        <img
-          src={housing.cover}
-          alt={housing.title}
-          className="housing-cover"
-        />
+        <Slideshow />
         <div className="housing-content">
           <div className="housing-location">
             <h2>{housing.title}</h2>
@@ -82,4 +79,4 @@ const HousingForm = () => {
   );
 };
 
-export default HousingForm;
+export default Housing;

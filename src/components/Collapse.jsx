@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-const Button = ({ label, content }) => {
+const Collapse = ({ label, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const buttonContent = () => {
@@ -23,4 +23,4 @@ const Button = ({ label, content }) => {
   );
 };
 
-export default Button;
+export default Collapse;
