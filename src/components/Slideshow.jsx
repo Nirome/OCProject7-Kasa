@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import chevronLeft from "/src/assets/images/chevron-left.png";
 import chevronRight from "/src/assets/images/chevron-right.png";
+import NotFound from "../pages/NotFound";
 
 const Slideshow = () => {
   const { id } = useParams();
@@ -38,7 +39,7 @@ const Slideshow = () => {
   };
 
   if (!housing) {
-    return <div>Image non trouvée</div>;
+    return <NotFound />;
   }
 
   return (

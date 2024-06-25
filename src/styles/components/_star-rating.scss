@@ -1,9 +1,18 @@
 .star-rating {
     display: flex;
     gap: 15px;
+    @media (max-width: 768px) {
+        order: -1;
+        gap: 5px;
+        position: relative;
+        bottom: 6px;
+    }
     .star {
         font-size: 1.4rem; 
-        color: #E3E3E3; 
+        color: #E3E3E3;
+        @media (max-width: 768px) {
+            font-size: 0.9rem;
+        } 
         &.selected {
             color: $primary-color; 
         }

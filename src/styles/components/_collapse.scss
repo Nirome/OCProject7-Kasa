@@ -12,10 +12,20 @@
     color: #fff;
     padding: 11px 20px 11px 10px;
     position: relative;
-    cursor: pointer; 
+    cursor: pointer;
+    @media (max-width: 768px) {
+        font-size: 13px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+
     .fa-chevron-up {
         transition: transform 0.3s ease-in-out; 
-        font-size: 1.9rem;   
+        font-size: 1.9rem;  
+        @media (max-width: 768px) {
+          font-size: 1.5rem;
+          } 
     }
     .rotate {
         transform: rotate(-180deg);
@@ -40,6 +50,11 @@
         padding: 20px;
         transform: translateY(-100%);
         transition: transform 0.3s ease-out;
+        @media (max-width: 768px) {
+           font-size: 12px;
+           margin: -5px;
+          }
+
     }
     &.expanded p,
     &.expanded ul {

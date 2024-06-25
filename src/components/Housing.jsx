@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Button from "./Collapse";
 import StarRating from "./StarRating";
 import Slideshow from "./Slideshow";
+import Collapse from "./Collapse";
+import NotFound from "../pages/NotFound";
 
 const Housing = () => {
   const { id } = useParams();
@@ -27,7 +28,7 @@ const Housing = () => {
   }, [id]);
 
   if (!housing) {
-    return <div>Logement non trouvé</div>;
+    return <NotFound />;
   }
 
   const [firstName, lastName] = housing.host.name.split(" ");
@@ -61,8 +62,8 @@ const Housing = () => {
           </div>
         </div>
         <div className="housing-button">
-          <Button label="Description" content={<p>{housing.description}</p>} />
-          <Button
+          <Collapse label="Description" content={<p>{housing.description}</p>} />
+          <Collapse
             label="Équipements"
             content={
               <ul>
