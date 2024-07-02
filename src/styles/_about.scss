@@ -1,43 +1,65 @@
-.about-container {
+.about {
+  .header {
+    margin-bottom: 19px;
+  }
+
+  .about-container {
     margin: 0px 80px;
     @media (max-width: 768px) {
-       margin : 19px;
-      }
-.banner-about {
-    background: url(.././assets/images/banner-about.png) lightgray 50% center/cover no-repeat;
-    background-blend-mode: overlay;
-    height: 223px;
-    border-radius: 25px;
-    align-content: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: rgba(0, 0, 0, 0.3); 
-    @media (max-width: 768px) {
+      margin: 19px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .banner-about {
+      background: url(.././assets/images/banner-about.png) lightgray 50%
+        center/cover no-repeat;
+      background-blend-mode: overlay;
+      height: 223px;
+      border-radius: 25px;
+      align-content: center;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.3);
+      @media (max-width: 768px) {
         height: 111px;
         border-radius: 10px;
-        margin-top: -8px;
       }
-}
-.collapse-about {
-    display: flex;
-    flex-direction: column; 
-    margin: 0 110px;
-    padding: 38px 0px;
-    gap: 30px;
-    @media (max-width: 768px) {
+    }
+    .collapse-about {
+      display: flex;
+      flex-direction: column;
+      margin: 0 110px;
+      padding: 38px 0px;
+      gap: 30px;
+      @media (max-width: 768px) {
         margin: 0;
         gap: 20px;
         padding-top: 19px;
         padding-bottom: 0px;
       }
-    button {
+      @media (min-width: 768px) and (max-width: 1024px) {
+        margin: 0px 80px;
+      }
+      .button-details.open {
+        background-color: #fbfbfb;  
+      }       
+      button {
         border-radius: 5px;
         font-size: 24px;
         height: 54px;
         @media (max-width: 768px) {
-            height: 30px;
-            font-size: 13px;
+          height: 30px;
+          font-size: 13px;
         }
+      }
     }
-}
+  }
+  .footer {
+    @media (max-width: 768px) {
+        padding-bottom: 9px;
+      }
+  }
 }

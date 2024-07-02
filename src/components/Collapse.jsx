@@ -10,7 +10,7 @@ const Collapse = ({ label, content }) => {
   };
 
   return (
-    <div className="button-details">
+    <div className={`button-details ${isOpen ? "open" : ""}`}>
       <button className="button" onClick={buttonContent}>
         {label}
         <FontAwesomeIcon

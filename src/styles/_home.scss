@@ -9,5 +9,9 @@
         margin: 20px 20px 27px 20px;
         gap: 22px;
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 }
 

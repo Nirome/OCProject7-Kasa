@@ -5,10 +5,18 @@
     @media (max-width: 768px) {
         margin: 20px 19px 27px 19px;
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 60px;
+        margin-right: 60px;
+      }    
+    
     img {
         @media (max-width: 768px) {
             width: 145px;
         };
+        @media (min-width: 768px) and (max-width: 1024px) {
+            width: 200px;
+          }     
     }
     ul {
         display: flex;

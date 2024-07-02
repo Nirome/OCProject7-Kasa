@@ -12,6 +12,11 @@ a {
         font-size: 12px;
         text-transform: uppercase;
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 18px;
+        text-transform: uppercase;
+      }     
+    
 }
 img {
     object-fit: cover;

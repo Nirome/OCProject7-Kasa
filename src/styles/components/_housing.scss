@@ -3,6 +3,10 @@
     @media (max-width: 768px) {
         margin: 0px 19px 27px 19px;
     }
+    @media (min-width: 768px) and (max-width: 1024px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
     
     .housing-content {
         display: flex;
@@ -106,6 +110,10 @@
         }       
         .button-details {
         width: 100%;
-        }  
+        }
+        .button-details.open {
+            background-color: #fbfbfb;
+           
+          }  
     }
 }

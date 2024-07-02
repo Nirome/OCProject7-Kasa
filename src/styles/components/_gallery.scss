@@ -12,6 +12,9 @@
     gap: 22px;
     background-color: #fff;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    gap: 36px;
+  }
   .card {
     position: relative;
     img {
@@ -22,6 +25,9 @@
         height: 255px;
         width: 100%;
       }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        height: 240px;
+      }
     }
     h3 {
       position: absolute;
@@ -31,6 +37,10 @@
       padding-right: 20px;
       @media (max-width: 768px) {
         bottom: 5px;
+        text-transform: none;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: 14px;
       }
     }
   }
