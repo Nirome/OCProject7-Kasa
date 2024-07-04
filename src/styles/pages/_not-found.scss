@@ -9,12 +9,15 @@
         display: flex;
         flex-direction: column;
         gap: 139px;
+        @media (max-width: 1024px) {
+            gap: 113px;
+        } 
     }
     h1 {
         color: $primary-color;
         font-size: 288px;
         text-align: center;
-        margin:-50px;
+        margin: 0px;
         @media (max-width: 768px) {
             font-size: 96px;
         } 

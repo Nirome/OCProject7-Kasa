@@ -34,7 +34,7 @@ const Housing = () => {
   const [firstName, lastName] = housing.host.name.split(" ");
 
   return (
-    <div>
+    <div className="housing-container">
       <Header />
       <div className="housing-details">
         <Slideshow />

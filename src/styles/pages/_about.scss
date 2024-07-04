@@ -1,4 +1,7 @@
 .about {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
   .header {
     margin-bottom: 19px;
   }
@@ -56,10 +59,5 @@
         }
       }
     }
-  }
-  .footer {
-    @media (max-width: 768px) {
-        padding-bottom: 9px;
-      }
   }
 }

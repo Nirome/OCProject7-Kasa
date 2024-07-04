@@ -18,7 +18,7 @@ const Collapse = ({ label, content }) => {
           className={`chevron-icon ${isOpen ? "rotate" : ""}`}
         />
       </button>
-        <div className={`content ${isOpen ? "expanded" : ""}`}>{content}</div>
+      <div className={`content ${isOpen ? "expanded" : ""}`}>{content}</div>
     </div>
   );
 };
